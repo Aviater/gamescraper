@@ -1,0 +1,44 @@
+body {
+    background-color: #1f1f1f;
+    margin: 50px 0;
+}
+
+hr {
+    background-color: white;
+}
+
+table, p, li, h1, h2, h3, h4, h5, h6, span, label, hr, caption {
+    color: white;
+}
+
+caption {
+    caption-side: unset;
+}
+
+.wrapper {
+    width: 100%;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.wrapper table {
+    width: 100%;
+}
+
+.wrapper ul {
+    list-style: none;
+}
+
+.wrapper ul li span {
+    float: right;
+}
+
+#select-platform {
+    width: 150px;
+}
+
+.scan-button {
+    bottom: 0;
+    right: 15px;
+    position: absolute;
+}

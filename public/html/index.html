@@ -1,0 +1,76 @@
+<div class="container">
+    <form class="search-form" target="/scan">
+        <div class="row">
+            <div class="col-sm-10">
+                <p>Last scan: <span>23-06-2020 : 16:32:18 GMT</span></p>
+                <label for="select-platform" class="">Select platform:</label>
+                <select id="select-platform" class="custom-select">
+                    <option>Epic Games</option>
+                    <option>Steam</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <a href="/scan" class="btn btn-outline-success scan-button">Scan</a>
+            </div>
+        </div>
+    </form>
+    <hr>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="wrapper">
+                <p>Discounts Found</p>
+                <table class="bm-games-list">
+                    <thead>
+                        <th>Name</th>
+                        <th>Price Before</th>
+                        <th>Discount</th>
+                        <th>Price After</th>
+                        <th></th>
+                    </thead>
+                    <tbody class="found-games">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="wrapper">
+                <p>Scan Results</p>
+                <ul>
+                    <li>Discounts found: <span>34</span></li>
+                    <li>Games scanned: <span>1782</span></li>
+                    <li>Scan duration: <span>01:32:12</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        
+<script>
+    // Get elements
+    element = (element) => {
+        console.log('Found it!');
+        return document.getElementsByClassName(element);
+    }
+
+    // Connect to socket.io
+    let socket = io.connect('http://127.0.0.1:4000');
+
+    if (socket !== 'undefined') {
+        console.log('Connected to socket...');
+
+        socket.on('response', (res) => {
+            console.log('Response:', res);
+
+            for(let i = 0; i < res.length; i++) {
+                let htmlMarkup = `<tr> <td>${res[i].title}</td> <td>${res[i].standardPrice}€</td> <td>${res[i].discount}</td> <td>${res[i].discountPrice}€</td> <td><a href=${res[i].url} target="_blank" class="btn btn-outline-info url">Visit</a></td> </tr>`
+                $('.found-games').append(htmlMarkup);
+            }
+
+        });
+    } else {
+        console.log('Something went wrong!');
+    }
+    
+</script>
