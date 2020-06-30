@@ -128,11 +128,7 @@
         socket.on('game-data', (res) => {
             console.log('Game data response:', res);
             let gamesList = sortList(res);
-
-            
-            // let bodyOpen = `<tbody class="found-games">`
             let tableBody = [];
-            // let bodyClose = `</tbody>`
             for(let i = 0; i < gamesList.length; i++) {
                 tableBody.push(`<tr> <td>${gamesList[i].title}</td> <td>${handleDiscountText(gamesList[i]).standardPrice}</td> <td ${handleStyles(gamesList[i])}>${handleDiscountText(gamesList[i]).discount}</td> <td ${handleStyles(gamesList[i])}>${handleDiscountText(gamesList[i]).discountPrice}</td> <td><a href=${gamesList[i].url} target="_blank" class="btn btn-outline-info url">Visit</a></td> </tr>`);
             }

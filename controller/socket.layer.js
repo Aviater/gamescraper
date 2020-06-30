@@ -4,37 +4,38 @@ const moment = require('moment');
 const { Logger } = require('../utils/logger');
 const generalUtils = require('../utils/general');
 
-sendScanResults = (socket, discounts, scanResults, scanDuration) => {
+sendScanResults = (discounts, scanResults, duration, scanErrors) => {
     // Send scan data
-    const res = {
-        discounts: discounts,
+    const results = {
+        discounts,
         gamesScanned: scanResults.length,
-        duration: scanDuration
+        duration,
+        scanErrors
     }
-    
-    socket.emit('scan-results', res);
+    console.log('SCAN FINISHED');
+    console.log(results);
+    return results;
 }
 
-exports.fetchGamesList = (socket) => {
-    Game.find()
+exports.fetchGamesList = async () => {
+    let games = await Game.find()
         .then(res => {
-            // Emit message
-            socket.emit('game-data', res);
+            return res
         })
         .catch(err => {
             Logger.error('Could\'t fetch database information:', err);
         });
+    return games;
 }
 
-exports.performScan = async (client, socket) => {
+exports.performScan = async () => {
     await puppeteer.launchPuppeteer();
-
     await puppeteer.navigateToUrl('https://www.epicgames.com/store/en-US/browse')
-    
     await puppeteer.selectMoreButton();
     
-    const {discounts, scanResults, scanDuration} = await puppeteer.selectAllDiscountGames();
+    const {discounts, scanResults, scanDuration, scanErrors} = await puppeteer.selectAllDiscountGames();
     
+    let scan;
     for(let i = 0; i < scanResults.length; i++) {
         const game = {
             image: scanResults[i].image,
@@ -50,17 +51,15 @@ exports.performScan = async (client, socket) => {
                 }
             ]
         }
-        
-        Game.findOneAndUpdate({'title': scanResults[i].title}, game, {useFindAndModify: false})
+
+        scan = await Game.findOneAndUpdate({'title': scanResults[i].title}, game, {useFindAndModify: false})
             .then(res => {
                 Logger.silly(`New game updated: ${res.title}`);
             })
             .then(() => {
                 if(i == (scanResults.length - 1)) {
-                    if(i == (scanResults.length - 1)) {
-                        sendScanResults(socket, discounts, scanResults, scanDuration);
-                    }
-                    Logger.info(`\u2714 ${scanResults.length} games were processed`);
+                    Logger.info(`\u2714 ${scanResults.length} games were updated`);
+                    return sendScanResults(discounts, scanResults, scanDuration, scanErrors);
                 }
             })
             .catch((err) => {
@@ -71,13 +70,12 @@ exports.performScan = async (client, socket) => {
                     })
                     .then(() => {
                         if(i == (scanResults.length - 1)) {
-                            Logger.info(`\u2714 ${scanResults.length} games were processed`);
-                            sendScanResults(socket, discounts, scanResults, scanDuration)
+                            Logger.info(`\u2714 ${scanResults.length} games were added`);
+                            return sendScanResults(discounts, scanResults, scanDuration, scanErrors);
                         }
                     })
                     .catch((err) => Logger.error(`Unable to add game "${newGame.title}": ${err}`));
             })
-        
-    }
-
+        }
+        return scan;
 }

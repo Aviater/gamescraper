@@ -1,0 +1,8 @@
+{
+	"name": "Gamescount",
+	"description": "Web scraper to locate discounts games.",
+	"repository": "https://github.com/Aviater/gamescraper.git",
+	"logo": "",
+	"keywords": ["gamescount"],
+	"image": "heroku/nodejs"
+}

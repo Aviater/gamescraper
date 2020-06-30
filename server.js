@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+// const mailer = require('./utils/mailer');
+const cronJob = require('./utils/scheduler');
 const { Logger } = require('./utils/logger');
 const handler = require('./utils/loggerHandler');
 const client = require('socket.io').listen(4000).sockets;
@@ -35,20 +37,30 @@ app.use(express.static(__dirname + '/public'));
 const routes = require('./routes/routes');
 app.use(routes);
 
-// Test
+// Handle socket communication
 const socketHandler = require('./controller/socket.layer');
 client.on('connection', (socket) => {
-    socketHandler.fetchGamesList(socket);
-
-    socket.on('scan', () => {
-        socketHandler.performScan(client, socket).then(() => {
-            socketHandler.fetchGamesList(socket);
+    socketHandler.fetchGamesList()
+        .then(res => {
+            socket.emit('game-data', res);
         });
+    
+    socket.on('scan', () => {
+        socketHandler.performScan()
+            .then(res => {
+                console.log('Scan results:', res);
+                socket.emit('scan-results', res);
+            })
+            .then(() => {
+                socketHandler.fetchGamesList();
+            });
     });
 
     socket.on('fetch-list', () => {
-        console.log('Fetched List');
-        socketHandler.fetchGamesList(socket);
+        socketHandler.fetchGamesList()
+            .then(res => {
+                socket.emit('game-data', res);
+            });
     });
 
     socket.on('disconnect', () => {
@@ -56,6 +68,10 @@ client.on('connection', (socket) => {
         socket.disconnect();
     });
 
+    // Cron job
+    const autoScan = 49; // hour 
+    cronJob.scheduleScan(autoScan, socketHandler.performScan, socket);
+    
 });
 
 const port = process.env.PORT || 5000;

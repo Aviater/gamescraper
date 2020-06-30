@@ -14,20 +14,13 @@ router.get('/', (req, res) => {
 router.get('/api', (req, res) => {
     Game.find()
         .then((game) => {
-            const updatedAt = moment(game[0].updatedAt).format('DD/MM/YYYY');
+            const updatedAt = moment(game[0].updatedAt).format('DD/MM/YYYY HH:mm:ss');
             return res.json({updatedAt});
         })
         .catch(() => {
             return res.json({updatedAt: 'Not scanned yet'});
         })
-    
 })
 
 
 module.exports = router;
-
-// 1. Fix discounts not calculating properly. DONE
-// 2. Add historical data to each game.
-// 3. Get documents with discount. DONE
-// 4. Render those discounts in a separate list. DONE
-// 5. Do scan statistics. (In memory)

@@ -23,7 +23,7 @@ exports.navigateToUrl = async (url) => {
 exports.selectMoreButton = async () => {
     try {
         await page.click('#browse-pagination', {waitUntil: 'networkidle2'})
-        console.log('clicked!');
+        Logger.silly('clicked!');
     } catch(err) {
         Logger.error(`Unable to click the 'Load More' button: `, err);
     }
@@ -88,7 +88,6 @@ exports.selectAllDiscountGames = async () => {
                     }
                     
                 }
-                console.log('Errors:', scanErrors);
                 console.log('GAMES:', scannedGames);
             return {
                 discountGames,
@@ -101,7 +100,8 @@ exports.selectAllDiscountGames = async () => {
         return {
             discounts: gamesList.discountGames,
             scanResults: gamesList.scannedGames,
-            scanDuration: process.hrtime(scanTimerStart)
+            scanDuration: process.hrtime(scanTimerStart),
+            scanErrors: gamesList.scanErrors
         }
     } catch(err) {
         Logger.error('Unable to scan games:', err);
