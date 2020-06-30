@@ -2,9 +2,9 @@ const schedule = require('node-schedule');
 const mailer = require('./mailer');
 const { Logger } = require('./logger');
 
-exports.scheduleScan = (minute, doScan, socket) => {
+exports.scheduleScan = (hour, doScan, socket) => {
     const rule = new schedule.RecurrenceRule();
-    rule.minute = minute;
+    rule.hour = hour;
 
     schedule.scheduleJob(rule, () => {
         Logger.info(`Started cron job`);
