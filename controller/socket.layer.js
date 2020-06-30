@@ -12,8 +12,7 @@ sendScanResults = (discounts, scanResults, duration, scanErrors) => {
         duration,
         scanErrors
     }
-    console.log('SCAN FINISHED');
-    console.log(results);
+
     return results;
 }
 
