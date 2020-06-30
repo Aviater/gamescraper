@@ -6,7 +6,7 @@ let page;
 
 // Launch puppeteer
 exports.launchPuppeteer = async () => {
-    browser = await puppeteer.launch({headless: false});
+    browser = await puppeteer.launch({headless: true});
     page = await browser.newPage();
 }
 
@@ -31,32 +31,35 @@ exports.selectMoreButton = async () => {
 
 // Select all games
 exports.selectAllDiscountGames = async () => {
+    const scanTimerStart = process.hrtime();
     try {
         await page.waitForNavigation();
 
         let gamesList = await page.evaluate(() => {
-                console.log('evaluating');
                 let allGames = document.getElementsByClassName('BrowseGrid-card_9f6a50fb');
                 
                 console.log('All games:', allGames);
                 let scannedGames = [];
+                let discountGames = 0;
                 let scanErrors = 0;
                 for(let i = 0; i < allGames.length; i++) {
                     try {
                         const image = allGames[i].getElementsByTagName('img')[0].src;
                         const title = allGames[i].getElementsByClassName('OfferTitleInfo-title_abc02a91')[0].textContent;
                         const url = allGames[i].getElementsByTagName('a')[0].href;
-                        const standardPrice = allGames[i].getElementsByClassName('Price-original_a6834d25')[0].textContent;
+                        let standardPrice = allGames[i].getElementsByClassName('Price-original_a6834d25')[0].textContent;
                         let discount = 0;
                         let findDiscountPrice = 0;
                         try {
+                            
                             // Check if discounted
-                            if(allGames[i].getElementsByClassName('PurchaseTag-tag_452447bf')[0] !== null) {
+                            if(typeof allGames[i].getElementsByClassName('PurchaseTag-tag_452447bf')[0] !== 'undefined') {
                                 discount = allGames[i].getElementsByClassName('PurchaseTag-tag_452447bf')[0].textContent;
                             }
-
+                            
                             standardPrice = allGames[i].getElementsByClassName('Price-discount_01260a89')[0].textContent;
                             findDiscountPrice = allGames[i].getElementsByClassName('Price-original_a6834d25')[0].textContent;
+                            discountGames++;
                             
                         } catch(err) {
                             findDiscountPrice = standardPrice;
@@ -88,18 +91,19 @@ exports.selectAllDiscountGames = async () => {
                 console.log('Errors:', scanErrors);
                 console.log('GAMES:', scannedGames);
             return {
-                scannedGames: scannedGames,
-                scanErrors: scanErrors
+                discountGames,
+                scannedGames,
+                scanErrors,
             };
         });
-
-        Logger.info(`${gamesList.scannedGames[1]} games scanned.`);
         Logger.warn(`${gamesList.scanErrors} scan errors.`);
 
-        return gamesList.scannedGames;
+        return {
+            discounts: gamesList.discountGames,
+            scanResults: gamesList.scannedGames,
+            scanDuration: process.hrtime(scanTimerStart)
+        }
     } catch(err) {
         Logger.error('Unable to scan games:', err);
     }
-
-    
 }

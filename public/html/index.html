@@ -2,23 +2,23 @@
     <form class="search-form" target="/scan">
         <div class="row">
             <div class="col-sm-10">
-                <p>Last scan: <span>23-06-2020 : 16:32:18 GMT</span></p>
-                <label for="select-platform" class="">Select platform:</label>
+                <p>Last scan: <span id="last-scanned"></span></p>
+                <label for="select-platform">Select platform:</label>
                 <select id="select-platform" class="custom-select">
                     <option>Epic Games</option>
                     <option>Steam</option>
                 </select>
             </div>
             <div class="col-sm-2">
-                <a href="/scan" class="btn btn-outline-success scan-button">Scan</a>
+                <button class="btn btn-outline-success scan-button" onclick="performScan()">Scan</button>
             </div>
         </div>
     </form>
     <hr>
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8 bm-games-col">
             <div class="wrapper">
-                <p>Discounts Found</p>
+                <p>Games Found</p>
                 <table class="bm-games-list">
                     <thead>
                         <th>Name</th>
@@ -35,10 +35,7 @@
         <div class="col-sm-4">
             <div class="wrapper">
                 <p>Scan Results</p>
-                <ul>
-                    <li>Discounts found: <span>34</span></li>
-                    <li>Games scanned: <span>1782</span></li>
-                    <li>Scan duration: <span>01:32:12</span></li>
+                <ul class="scan-results">
                 </ul>
             </div>
         </div>
@@ -48,10 +45,74 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
         
 <script>
+    // Fetch api data (last scan)
+    fetch('/api')
+        .then(res => {
+            res.json()
+                .then((data) => {
+                    document.getElementById('last-scanned').innerHTML = data.updatedAt;
+                });
+        })
+        .catch(err => {
+            console.log(`Unable to fetch api data: ${err}`);
+        });
+
     // Get elements
     element = (element) => {
         console.log('Found it!');
         return document.getElementsByClassName(element);
+    }
+
+    // Change text for certain discounts
+    handleDiscountText = (res) => {
+        let standardPrice;
+        let discount;
+        let discountPrice;
+        
+        if(res.standardPrice === 0) {
+            standardPrice = 'Free'
+        } else {
+            standardPrice = `${res.standardPrice}€`;
+        }
+
+        if(res.discountPrice === 0) {
+            discountPrice = 'Free'
+        } else {
+            discountPrice = `${res.discountPrice}€`;
+        }
+
+        if(res.discountPrice == 0 && res.standardPrice !== 0) {
+            discount = '-100%'
+        } else {
+            discount = `${res.discount}`
+        }
+
+        return {
+            standardPrice,
+            discount,
+            discountPrice
+        };
+    }
+
+    // Style discounts in colors
+    handleStyles = (res) => {
+        if(res.standardPrice !== res.discountPrice) {
+            return 'class="discount-style"';
+        }
+    }
+
+    // Sort list
+    sortList = (res) => {
+        let sortedList = [];
+        res.forEach((item) => {
+            if(item.standardPrice !== item.discountPrice) {
+                sortedList.unshift(item);
+            } else {
+                sortedList.push(item);
+            }
+        })
+        
+        return sortedList
     }
 
     // Connect to socket.io
@@ -60,17 +121,45 @@
     if (socket !== 'undefined') {
         console.log('Connected to socket...');
 
-        socket.on('response', (res) => {
-            console.log('Response:', res);
+        performScan = () => {
+            socket.emit('scan');
+        }
 
-            for(let i = 0; i < res.length; i++) {
-                let htmlMarkup = `<tr> <td>${res[i].title}</td> <td>${res[i].standardPrice}€</td> <td>${res[i].discount}</td> <td>${res[i].discountPrice}€</td> <td><a href=${res[i].url} target="_blank" class="btn btn-outline-info url">Visit</a></td> </tr>`
-                $('.found-games').append(htmlMarkup);
+        socket.on('game-data', (res) => {
+            console.log('Game data response:', res);
+            let gamesList = sortList(res);
+
+            
+            // let bodyOpen = `<tbody class="found-games">`
+            let tableBody = [];
+            // let bodyClose = `</tbody>`
+            for(let i = 0; i < gamesList.length; i++) {
+                tableBody.push(`<tr> <td>${gamesList[i].title}</td> <td>${handleDiscountText(gamesList[i]).standardPrice}</td> <td ${handleStyles(gamesList[i])}>${handleDiscountText(gamesList[i]).discount}</td> <td ${handleStyles(gamesList[i])}>${handleDiscountText(gamesList[i]).discountPrice}</td> <td><a href=${gamesList[i].url} target="_blank" class="btn btn-outline-info url">Visit</a></td> </tr>`);
             }
 
+            let htmlMarkup =    `<thead>
+                                    <th>Name</th>
+                                    <th>Price Before</th>
+                                    <th>Discount</th>
+                                    <th>Price After</th>
+                                    <th></th>
+                                </thead>
+                                <tbody class="found-games">
+                                ${tableBody}
+                                </tbody>`
+                                
+            $('.bm-games-list').empty().append(htmlMarkup);
+            
         });
+
+        socket.on('scan-results', (res) => {
+            console.log('Scan results response:', res);
+            let htmlMarkup = `<li>Discounts found: <span>${res.discounts}</span></li> <li>Games scanned: <span>${res.gamesScanned}</span></li> <li>Scan duration: <span>${res.duration[0]}s ${res.duration[1] / 1000000}ms</span></li>`
+            $('.scan-results').empty().append(htmlMarkup);
+            socket.emit('fetch-list');
+        })
     } else {
-        console.log('Something went wrong!');
+        console.log('Socket connection problem');
     }
     
 </script>

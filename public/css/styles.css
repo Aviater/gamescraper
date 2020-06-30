@@ -37,8 +37,27 @@ caption {
     width: 150px;
 }
 
+.search-form .col-sm-10 {
+    padding-left: 0;
+}
+
 .scan-button {
     bottom: 0;
     right: 15px;
     position: absolute;
+}
+
+.discount-style {
+    color: #28a745;
+}
+
+.bm-games-col {
+    height: calc(90vh - 160px);
+    overflow-y: scroll;
+    border: 1px solid white;
+    padding-left: 0;
+}
+
+.bm-games-col .wrapper {
+    border: none;
 }

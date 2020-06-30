@@ -894,3 +894,822 @@
 {"level":"error","message":"Could't fetch database information:socket is not defined","stack":"ReferenceError: socket is not defined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\pages.js:16:13\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2020-06-29 01:32:02"}
 {"level":"error","message":"Unable to click the 'Load More' button: Execution context was destroyed, most likely because of a navigation.","stack":"Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:146:23)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:46:64)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:30\n    at async DOMWorld.$ (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:96:26)\n    at async DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:259:24)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\scrape.js:19:5\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\scrape.js:19:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2020-06-29 01:32:13"}
 {"level":"error","message":"Could't fetch database information:socket is not defined","stack":"ReferenceError: socket is not defined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\pages.js:16:13\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2020-06-29 01:33:53"}
+{"level":"error","message":"Unable to click the 'Load More' button: No node found for selector: #browse-pagination","stack":"Error: No node found for selector: #browse-pagination\n    at Object.assert (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:29:15)\n    at DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:260:18)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\scrape.js:20:5\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\scrape.js:20:21\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2020-06-29 16:59:53"}
+{"level":"error","message":"Unable to click the 'Load More' button: No node found for selector: #browse-pagination","stack":"Error: No node found for selector: #browse-pagination\n    at Object.assert (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:29:15)\n    at DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:260:18)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\scrape.js:20:5\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\scrape.js:20:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: No node found for selector: #browse-pagination","stack":"Error: No node found for selector: #browse-pagination\n    at Object.assert (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:29:15)\n    at DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:260:18)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\scrape.js:19:5\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\scrape.js:19:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:socket.close is not a function","stack":"TypeError: socket.close is not a function\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:26:24\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:socket.close is not a function","stack":"TypeError: socket.close is not a function\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:26:24\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:socket.close is not a function","stack":"TypeError: socket.close is not a function\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:26:24\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Execution context was destroyed, most likely because of a navigation.","stack":"Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:146:23)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:46:64)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:30\n    at async DOMWorld.$ (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:96:26)\n    at async DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:259:24)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:5\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to scan games:Execution context was destroyed, most likely because of a navigation.","stack":"Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:146:23)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:100:61)\n    at async ExecutionContext.evaluate (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:33:16)\n    at async Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:37:25)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:43:23\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at DOMWorld.evaluate (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:89:24)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.evaluate (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:591:14)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:37:36)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:43:23"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: No node found for selector: #browse-pagination","stack":"Error: No node found for selector: #browse-pagination\n    at Object.assert (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:29:15)\n    at DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:260:18)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:5\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Execution context was destroyed, most likely because of a navigation.","stack":"Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:146:23)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:46:64)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:30\n    at async DOMWorld.$ (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:96:26)\n    at async DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:259:24)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:5\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:323:22)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to scan games:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:323:22)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:36:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:43:42\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"name":"TimeoutError","level":"error","message":"Unable to scan games:Navigation timeout of 30000 ms exceeded","stack":"TimeoutError: Navigation timeout of 30000 ms exceeded\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:100:111\n    at async FrameManager.waitForFrameNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\FrameManager.js:107:23)\n    at async Frame.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\FrameManager.js:298:16)\n    at async Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:16)\n    at async Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:36:9)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:36:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:43:42\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"name":"TimeoutError","level":"error","message":"Unable to scan games:Navigation timeout of 30000 ms exceeded","stack":"TimeoutError: Navigation timeout of 30000 ms exceeded\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:100:111\n    at async FrameManager.waitForFrameNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\FrameManager.js:107:23)\n    at async Frame.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\FrameManager.js:298:16)\n    at async Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:16)\n    at async Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:36:9)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:43:33\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:36:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:43:49\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:38:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:40:21\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:323:22)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:43:21)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to scan games:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:323:22)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:36:20)\n    at performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:47:57)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to scan games:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:323:22)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:36:20)\n    at performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:47:57)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to scan games:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:323:22)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:36:20)\n    at performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:47:57)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:85:50)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at ElementHandle.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\JSHandle.js:44:46)\n    at ElementHandle.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at ElementHandle.$ (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\JSHandle.js:375:35)\n    at ElementHandle.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at DOMWorld.$ (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:97:38)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:259:24)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:45:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:45:21)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:socket is not defined","stack":"ReferenceError: socket is not defined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:46:13\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:socket is not defined","stack":"ReferenceError: socket is not defined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:46:13\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:socket is not defined","stack":"ReferenceError: socket is not defined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:46:13\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:socket is not defined","stack":"ReferenceError: socket is not defined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:46:13\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:Cannot read property 'emit' of undefined","stack":"TypeError: Cannot read property 'emit' of undefined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:46:20\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:Cannot read property 'emit' of undefined","stack":"TypeError: Cannot read property 'emit' of undefined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:46:20\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:Cannot read property 'emit' of undefined","stack":"TypeError: Cannot read property 'emit' of undefined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:46:20\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Could't fetch database information:Cannot read property 'emit' of undefined","stack":"TypeError: Cannot read property 'emit' of undefined\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:46:20\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"name":"TimeoutError","level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation timeout of 30000 ms exceeded","stack":"TimeoutError: Navigation timeout of 30000 ms exceeded\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:100:111\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:51:21)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Socket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:21:13)"}
+{"name":"TimeoutError","level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation timeout of 30000 ms exceeded","stack":"TimeoutError: Navigation timeout of 30000 ms exceeded\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:100:111\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:51:21)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Socket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\routes\\routes.js:21:13)"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"level":"error","message":"Unable to click the 'Load More' button: Execution context was destroyed, most likely because of a navigation.","stack":"Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:146:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:46:64)\n    at async C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:30\n    at async DOMWorld.$ (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:96:26)\n    at async DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:259:24)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async Object.exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\socket.layer.js:24:5)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at Object.exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\socket.layer.js:24:21)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: No node found for selector: #browse-pagination","stack":"Error: No node found for selector: #browse-pagination\n    at Object.assert (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:29:15)\n    at DOMWorld.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:260:18)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:9)\n    at async Object.exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\socket.layer.js:24:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at Object.exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\socket.layer.js:24:21)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"level":"error","message":"Unable to scan games:Evaluation failed: ReferenceError: discountsGames is not defined\n    at __puppeteer_evaluation_script__:57:17","stack":"Error: Evaluation failed: ReferenceError: discountsGames is not defined\n    at __puppeteer_evaluation_script__:57:17\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:102:19)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async ExecutionContext.evaluate (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:33:16)\n    at async Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:38:25)\n    at async Object.exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\socket.layer.js:25:52)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at DOMWorld.evaluate (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:89:24)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.evaluate (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:591:14)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:38:36)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Object.exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\socket.layer.js:25:52)"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Cannot read property 'goto' of undefined","stack":"TypeError: Cannot read property 'goto' of undefined\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at Object.exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\socket.layer.js:22:15)\n    at Socket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\server.js:44:23)\n    at Socket.emit (events.js:311:20)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\socket.io\\lib\\socket.js:528:12\n    at processTicksAndRejections (internal/process/task_queues.js:79:11)"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Unable to add game: Anno 1701: History Edition","level":"error"}
+{"message":"Unable to add game: Stranger Things 3: The Game","level":"error"}
+{"message":"Unable to add game: Anno 1404: History Edition","level":"error"}
+{"message":"Unable to add game: AER Memories of Old","level":"error"}
+{"message":"Unable to add game: Missile Command: Recharged","level":"error"}
+{"message":"Unable to add game: SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated","level":"error"}
+{"message":"Unable to add game: Desperados III","level":"error"}
+{"message":"Unable to add game: Among Trees","level":"error"}
+{"message":"Unable to add game: Windbound","level":"error"}
+{"message":"Unable to add game: Pathway","level":"error"}
+{"message":"Unable to add game: ARK: Survival Evolved","level":"error"}
+{"message":"Unable to add game: Samurai Shodown","level":"error"}
+{"message":"Unable to add game: SAMURAI SHODOWN NEOGEO COLLECTION","level":"error"}
+{"message":"Unable to add game: Beyond Blue","level":"error"}
+{"message":"Unable to add game: Disco Elysium","level":"error"}
+{"message":"Unable to add game: RimWorld","level":"error"}
+{"message":"Unable to add game: Surgeon Simulator 2","level":"error"}
+{"message":"Unable to add game: Poly Bridge 2","level":"error"}
+{"message":"Unable to add game: Borderlands: The Handsome Collection","level":"error"}
+{"message":"Unable to add game: Sludge Life","level":"error"}
+{"message":"Unable to add game: Maneater","level":"error"}
+{"message":"Unable to add game: Saints Row The Third Remastered","level":"error"}
+{"message":"Unable to add game: Sid Meier's Civilization VI","level":"error"}
+{"message":"Unable to add game: Mafia: Trilogy","level":"error"}
+{"message":"Unable to add game: Mafia : Definitive Edition","level":"error"}
+{"message":"Unable to add game: Grand Theft Auto V: Premium Edition","level":"error"}
+{"message":"Unable to add game: The Witcher 3: Wild Hunt - Game of the Year Edition","level":"error"}
+{"message":"Unable to add game: Huntdown","level":"error"}
+{"message":"Unable to add game: Delores: A Thimbleweed Park mini-adventure","level":"error"}
+{"message":"Unable to add game: Before We Leave","level":"error"}
+{"message":"Unable to add game: Death Coming","level":"error"}
+{"message":"Unable to add game: Old World","level":"error"}
+{"message":"Unable to add game: Might & Magic: Chess Royale","level":"error"}
+{"message":"Unable to add game: World War Z GOTY","level":"error"}
+{"message":"Unable to add game: Amnesia: The Dark Descent","level":"error"}
+{"message":"Unable to add game: Crashlands","level":"error"}
+{"message":"Unable to add game: Levelhead","level":"error"}
+{"message":"Unable to add game: SnowRunner","level":"error"}
+{"message":"Unable to add game: Dread Nautical","level":"error"}
+{"message":"Unable to add game: SMITE","level":"error"}
+{"message":"Unable to add game: Just Cause 4","level":"error"}
+{"message":"Unable to add game: For The King","level":"error"}
+{"message":"Unable to add game: Wheels of Aurelia","level":"error"}
+{"message":"Unable to add game: Industries of Titan","level":"error"}
+{"message":"Unable to add game: Sherlock Holmes Crimes and Punishments","level":"error"}
+{"message":"Unable to add game: Gone Home","level":"error"}
+{"message":"Unable to add game: Hob","level":"error"}
+{"message":"Unable to add game: Tormentor x Punisher","level":"error"}
+{"message":"Unable to add game: Totally Reliable Delivery Service","level":"error"}
+{"message":"Unable to add game: Genesis Alpha One","level":"error"}
+{"message":"Unable to add game: Figment","level":"error"}
+{"message":"Unable to add game: The Stanley Parable","level":"error"}
+{"message":"Unable to add game: Assassin's Creed Rogue","level":"error"}
+{"message":"Unable to add game: Paladins","level":"error"}
+{"message":"Unable to add game: Dauntless","level":"error"}
+{"message":"Unable to add game: Watch Dogs","level":"error"}
+{"message":"Unable to add game: Monopoly PLUS","level":"error"}
+{"message":"Unable to add game: Uno","level":"error"}
+{"message":"Unable to add game: A Short Hike","level":"error"}
+{"message":"Unable to add game: State of Decay 2: Juggernaut Edition","level":"error"}
+{"message":"Unable to add game: Mutazione","level":"error"}
+{"message":"Unable to add game: Bloodroots","level":"error"}
+{"message":"Unable to add game: Anodyne 2: Return to Dust","level":"error"}
+{"message":"Unable to add game: GoNNER","level":"error"}
+{"message":"Unable to add game: Overpass","level":"error"}
+{"message":"Unable to add game: Offworld Trading Company","level":"error"}
+{"message":"Unable to add game: Gods & Monsters","level":"error"}
+{"message":"Unable to add game: Assassin's Creed Syndicate","level":"error"}
+{"message":"Unable to add game: Anno 2205","level":"error"}
+{"message":"Unable to add game: Far Cry 3 Blood Dragon","level":"error"}
+{"message":"Unable to add game: Faeria","level":"error"}
+{"message":"Unable to add game: Mars 2030 Editor","level":"error"}
+{"message":"Unable to add game: Corruption 2029","level":"error"}
+{"message":"Unable to add game: Aztez","level":"error"}
+{"message":"Unable to add game: Carcassonne","level":"error"}
+{"message":"Unable to add game: Zombie Army 4: Dead War","level":"error"}
+{"message":"Unable to add game: Tony Hawk's™ Pro Skater™ 1 + 2 Deluxe Pre-Purchase","level":"error"}
+{"message":"Unable to add game: Tony Hawk's™ Pro Skater™ 1 + 2 Pre-Purchase","level":"error"}
+{"message":"Unable to add game: Journey To The Savage Planet","level":"error"}
+{"message":"Unable to add game: Farming Simulator 19","level":"error"}
+{"message":"Unable to add game: Magic The Gathering Arena","level":"error"}
+{"message":"Unable to add game: TowerFall Ascension","level":"error"}
+{"message":"Unable to add game: Hello Neighbor Mod Kit","level":"error"}
+{"message":"Unable to add game: Wattam","level":"error"}
+{"message":"Unable to add game: The Telltale Batman Shadows Edition","level":"error"}
+{"message":"Unable to add game: Foregone","level":"error"}
+{"message":"Unable to add game: The Escapists","level":"error"}
+{"message":"Unable to add game: Detroit: Become Human","level":"error"}
+{"message":"Unable to add game: SuperMash","level":"error"}
+{"message":"Unable to add game: Hades","level":"error"}
+{"message":"Unable to add game: Mechwarrior 5","level":"error"}
+{"message":"Unable to add game: Mechwarrior 5 Modding Toolkit","level":"error"}
+{"message":"Unable to add game: Jotun Valhalla Edition","level":"error"}
+{"message":"Unable to add game: Surviving the Aftermath","level":"error"}
+{"message":"Unable to add game: The Crew 2","level":"error"}
+{"message":"Unable to add game: Phoenix Point","level":"error"}
+{"message":"Unable to add game: Arise: A Simple Story","level":"error"}
+{"message":"Unable to add game: The Wolf Among Us","level":"error"}
+{"message":"Unable to add game: Rayman Legends","level":"error"}
+{"message":"Unable to add game: Shenmue III","level":"error"}
+{"message":"Unable to add game: The Messenger","level":"error"}
+{"message":"Unable to add game: Bee Simulator","level":"error"}
+{"message":"Unable to add game: Star Wars Jedi: Fallen Order","level":"error"}
+{"message":"Unable to add game: Rune II","level":"error"}
+{"message":"Unable to add game: Yaga","level":"error"}
+{"message":"Unable to add game: Superliminal","level":"error"}
+{"message":"Unable to add game: Nuclear Throne","level":"error"}
+{"message":"Unable to add game: Red Dead Redemption 2","level":"error"}
+{"message":"Unable to add game: ReadySet Heroes","level":"error"}
+{"message":"Unable to add game: Afterparty","level":"error"}
+{"message":"Unable to add game: The Outer Worlds","level":"error"}
+{"message":"Unable to add game: Manifold Garden","level":"error"}
+{"message":"Unable to add game: Kine","level":"error"}
+{"message":"Unable to add game: The Jackbox Party Pack 6","level":"error"}
+{"message":"Unable to add game: Spellbreak","level":"error"}
+{"message":"Unable to add game: A Knights Quest","level":"error"}
+{"message":"Unable to add game: John Wick Hex","level":"error"}
+{"message":"Unable to add game: Ghostbusters: The Video Game Remastered","level":"error"}
+{"message":"Unable to add game: Tom Clancy's Ghost Recon Breakpoint","level":"error"}
+{"message":"Unable to add game: WHAT THE GOLF?","level":"error"}
+{"message":"Unable to add game: Untitled Goose Game","level":"error"}
+{"message":"Unable to add game: The Sojourn","level":"error"}
+{"message":"Unable to add game: Cardpocalypse","level":"error"}
+{"message":"Unable to add game: Borderlands 3","level":"error"}
+{"message":"Unable to add game: The Cycle","level":"error"}
+{"message":"Unable to add game: The Walking Dead: The Telltale Definitive Series","level":"error"}
+{"message":"Unable to add game: Falcon Age","level":"error"}
+{"message":"Unable to add game: Atomicrops","level":"error"}
+{"message":"Unable to add game: WRC 8 FIA World Rally Championship","level":"error"}
+{"message":"Unable to add game: Control","level":"error"}
+{"message":"Unable to add game: Ancestors The Humankind Odyssey","level":"error"}
+{"message":"Unable to add game: Auto Chess","level":"error"}
+{"message":"Unable to add game: Rebel Galaxy Outlaw","level":"error"}
+{"message":"Unable to add game: Tetris® Effect","level":"error"}
+{"message":"Unable to add game: Beyond: Two Souls","level":"error"}
+{"message":"Unable to add game: Horace","level":"error"}
+{"message":"Unable to add game: Griftlands","level":"error"}
+{"message":"Unable to add game: The Sinking City","level":"error"}
+{"message":"Unable to add game: Heavy Rain","level":"error"}
+{"message":"Unable to add game: Omen of Sorrow","level":"error"}
+{"message":"Unable to add game: Journey","level":"error"}
+{"message":"Unable to add game: Trover Saves the Universe","level":"error"}
+{"message":"Unable to add game: Anno 1800","level":"error"}
+{"message":"Unable to add game: Outer Wilds","level":"error"}
+{"message":"Unable to add game: Observation","level":"error"}
+{"message":"Unable to add game: Diesel Brothers Truck Building Simulator Editor","level":"error"}
+{"message":"Unable to add game: Shakedown Hawaii","level":"error"}
+{"message":"Unable to add game: Close to the Sun","level":"error"}
+{"message":"Unable to add game: Dangerous Driving","level":"error"}
+{"message":"Unable to add game: Totally Accurate Battle Simulator","level":"error"}
+{"message":"Unable to add game: Outward","level":"error"}
+{"message":"Unable to add game: Assassin's Creed III Remastered","level":"error"}
+{"message":"Unable to add game: Satisfactory","level":"error"}
+{"message":"Unable to add game: The Division 2","level":"error"}
+{"message":"Unable to add game: Operencia: The Stolen Sun","level":"error"}
+{"message":"Unable to add game: Helium Rain Mod Kit","level":"error"}
+{"message":"Unable to add game: Ape Out","level":"error"}
+{"message":"Unable to add game: Trials Rising","level":"error"}
+{"message":"Unable to add game: Far Cry New Dawn","level":"error"}
+{"message":"Unable to add game: Metro Exodus","level":"error"}
+{"message":"Unable to add game: Flower","level":"error"}
+{"message":"Unable to add game: Subnautica Below Zero","level":"error"}
+{"message":"Unable to add game: Oxenfree","level":"error"}
+{"message":"Unable to add game: My Time at Portia","level":"error"}
+{"message":"Unable to add game: Hello Neighbor","level":"error"}
+{"message":"Unable to add game: Hello Neighbor Hide & Seek","level":"error"}
+{"message":"Unable to add game: Ashen","level":"error"}
+{"message":"Unable to add game: Shadow Tactics","level":"error"}
+{"message":"Unable to add game: Mutant Year Zero: Road To Eden","level":"error"}
+{"message":"Unable to add game: RollerCoaster Tycoon Adventures","level":"error"}
+{"message":"Unable to add game: Darksiders III","level":"error"}
+{"message":"Unable to add game: Bad North","level":"error"}
+{"message":"Unable to add game: The Jackbox Party Pack 3","level":"error"}
+{"message":"Unable to add game: Assassin's Creed Odyssey","level":"error"}
+{"message":"Unable to add game: Donut County","level":"error"}
+{"message":"Unable to add game: 7 Billion Humans","level":"error"}
+{"message":"Unable to add game: The Walking Dead: The Final Season","level":"error"}
+{"message":"Unable to add game: Overcooked","level":"error"}
+{"message":"Unable to add game: GNOG","level":"error"}
+{"message":"Unable to add game: Vampyr","level":"error"}
+{"message":"Unable to add game: Moonlighter","level":"error"}
+{"message":"Unable to add game: City of Brass","level":"error"}
+{"message":"Unable to add game: Tom Clancy's Ghost Recon Wildlands","level":"error"}
+{"message":"Unable to add game: Minit","level":"error"}
+{"message":"Unable to add game: Far Cry 5","level":"error"}
+{"message":"Unable to add game: Q.U.B.E.2","level":"error"}
+{"message":"Unable to add game: Surviving Mars","level":"error"}
+{"message":"Unable to add game: Into The Breach","level":"error"}
+{"message":"Unable to add game: Kingdom Come: Deliverance","level":"error"}
+{"message":"Unable to add game: Subnautica","level":"error"}
+{"message":"Unable to add game: InnerSpace","level":"error"}
+{"message":"Unable to add game: Celeste","level":"error"}
+{"message":"Unable to add game: Gorogoa","level":"error"}
+{"message":"Unable to add game: Assassin's Creed Origins","level":"error"}
+{"message":"Unable to add game: The Jackbox Party Pack 4","level":"error"}
+{"message":"Unable to add game: The Jackbox Party Pack 5","level":"error"}
+{"message":"Unable to add game: South Park: The Fractured But Whole","level":"error"}
+{"message":"Unable to add game: RUINER","level":"error"}
+{"message":"Unable to add game: Last Day of June","level":"error"}
+{"message":"Unable to add game: The End is Nigh","level":"error"}
+{"message":"Unable to add game: >observer_","level":"error"}
+{"message":"Unable to add game: Conarium","level":"error"}
+{"message":"Unable to add game: Slime Rancher","level":"error"}
+{"message":"Unable to add game: Sundered Eldritch Edition","level":"error"}
+{"message":"Unable to add game: RiME","level":"error"}
+{"message":"Unable to add game: What Remains of Edith Finch","level":"error"}
+{"message":"Unable to add game: Everything","level":"error"}
+{"message":"Unable to add game: Yooka-Laylee and the Impossible Lair","level":"error"}
+{"message":"Unable to add game: Thimbleweed Park","level":"error"}
+{"message":"Unable to add game: Stories Untold","level":"error"}
+{"message":"Unable to add game: For Honor","level":"error"}
+{"message":"Unable to add game: The Walking Dead: A New Frontier","level":"error"}
+{"message":"Unable to add game: Steep","level":"error"}
+{"message":"Unable to add game: Darksiders Warmastered Edition","level":"error"}
+{"message":"Unable to add game: Watch Dogs 2","level":"error"}
+{"message":"Unable to add game: VR Funhouse Editor","level":"error"}
+{"message":"Unable to add game: ABZU","level":"error"}
+{"message":"Unable to add game: Inside","level":"error"}
+{"message":"Unable to add game: Drawful 2","level":"error"}
+{"message":"Unable to add game: Sherlock Holmes The Devil's Daughter","level":"error"}
+{"message":"Unable to add game: Hyper Light Drifter","level":"error"}
+{"message":"Unable to add game: Enter The Gungeon","level":"error"}
+{"message":"Unable to add game: Trackmania Turbo","level":"error"}
+{"message":"Unable to add game: Far Cry Primal","level":"error"}
+{"message":"Unable to add game: SUPERHOT","level":"error"}
+{"message":"Unable to add game: The Walking Dead: Michonne","level":"error"}
+{"message":"Unable to add game: Alan Wake","level":"error"}
+{"message":"Unable to add game: Layers of Fear","level":"error"}
+{"message":"Unable to add game: The Witness","level":"error"}
+{"message":"Unable to add game: Rainbow Six Siege","level":"error"}
+{"message":"Unable to add game: Darksiders II Deathinitive Edition","level":"error"}
+{"message":"Unable to add game: Kingdom New Lands","level":"error"}
+{"message":"Unable to add game: Rebel Galaxy","level":"error"}
+{"message":"Unable to add game: Human Resource Machine","level":"error"}
+{"message":"Unable to add game: The Jackbox Party Pack 2","level":"error"}
+{"message":"Unable to add game: SOMA","level":"error"}
+{"message":"Unable to add game: ARK Editor","level":"error"}
+{"message":"Unable to add game: Valiant Hearts: The Great War","level":"error"}
+{"message":"Unable to add game: Batman™: Arkham Knight","level":"error"}
+{"message":"Unable to add game: Metro: Last Light Redux","level":"error"}
+{"message":"Unable to add game: Axiom Verge","level":"error"}
+{"message":"Unable to add game: The Talos Principle","level":"error"}
+{"message":"Unable to add game: Far Cry 4","level":"error"}
+{"message":"Unable to add game: The Jackbox Party Pack","level":"error"}
+{"message":"Unable to add game: This War of Mine","level":"error"}
+{"message":"Unable to add game: Assassin's Creed Unity","level":"error"}
+{"message":"Unable to add game: LEGO® Batman™ 3: Beyond Gotham","level":"error"}
+{"message":"Unable to add game: Faster Than Light","level":"error"}
+{"message":"Unable to add game: Transistor","level":"error"}
+{"message":"Unable to add game: Child of Light: Ultimate Edition","level":"error"}
+{"message":"Unable to add game: South Park: The Stick of Truth","level":"error"}
+{"message":"Unable to add game: Fez","level":"error"}
+{"message":"Unable to add game: The Walking Dead: Season Two","level":"error"}
+{"message":"Unable to add game: The Bridge","level":"error"}
+{"message":"Unable to add game: Far Cry 3","level":"error"}
+{"message":"Unable to add game: Little Inferno","level":"error"}
+{"message":"Unable to add game: Batman™: Arkham City - Game of the Year Edition","level":"error"}
+{"message":"Unable to add game: LEGO® Batman™ 2: DC Super Heroes","level":"error"}
+{"message":"Unable to add game: Ticket to Ride","level":"error"}
+{"message":"Unable to add game: Alan Wake's American Nightmare","level":"error"}
+{"message":"Unable to add game: The Walking Dead: Season One","level":"error"}
+{"message":"Unable to add game: Super Meat Boy","level":"error"}
+{"message":"Unable to add game: Costume Quest","level":"error"}
+{"message":"Unable to add game: Limbo","level":"error"}
+{"message":"Unable to add game: Batman™ Arkham Asylum Game of the Year Edition","level":"error"}
+{"message":"Unable to add game: Metro: 2033 Redux","level":"error"}
+{"message":"Unable to add game: Torchlight","level":"error"}
+{"message":"Unable to add game: Shadow Complex Remastered","level":"error"}
+{"message":"Unable to add game: World of Goo","level":"error"}
+{"message":"Unable to add game: LEGO® Batman™ The Videogame","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Unable to add game \"Anno 1404: History Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Anno 1701: History Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Stranger Things 3: The Game\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"AER Memories of Old\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Missile Command: Recharged\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Desperados III\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Among Trees\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Windbound\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"ARK: Survival Evolved\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Pathway\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Samurai Shodown\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"SAMURAI SHODOWN NEOGEO COLLECTION\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Beyond Blue\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Disco Elysium\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"RimWorld\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Surgeon Simulator 2\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Poly Bridge 2\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Borderlands: The Handsome Collection\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Sludge Life\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Maneater\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Saints Row The Third Remastered\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Sid Meier's Civilization VI\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Mafia: Trilogy\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Mafia : Definitive Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Grand Theft Auto V: Premium Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Witcher 3: Wild Hunt - Game of the Year Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Huntdown\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Delores: A Thimbleweed Park mini-adventure\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Before We Leave\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Death Coming\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Old World\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Might & Magic: Chess Royale\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"World War Z GOTY\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Amnesia: The Dark Descent\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Crashlands\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Levelhead\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Dread Nautical\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"SnowRunner\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"SMITE\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Just Cause 4\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"For The King\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Wheels of Aurelia\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Sherlock Holmes Crimes and Punishments\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Industries of Titan\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Hob\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Gone Home\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Totally Reliable Delivery Service\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Genesis Alpha One\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Tormentor x Punisher\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Figment\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Stanley Parable\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Assassin's Creed Rogue\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Paladins\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Watch Dogs\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Dauntless\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Monopoly PLUS\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Uno\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"State of Decay 2: Juggernaut Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"A Short Hike\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Mutazione\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Bloodroots\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Anodyne 2: Return to Dust\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"GoNNER\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Offworld Trading Company\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Overpass\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Gods & Monsters\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Anno 2205\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Assassin's Creed Syndicate\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Far Cry 3 Blood Dragon\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Faeria\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Mars 2030 Editor\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Corruption 2029\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Aztez\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Carcassonne\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Zombie Army 4: Dead War\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Tony Hawk's™ Pro Skater™ 1 + 2 Deluxe Pre-Purchase\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Tony Hawk's™ Pro Skater™ 1 + 2 Pre-Purchase\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Journey To The Savage Planet\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Farming Simulator 19\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Magic The Gathering Arena\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"TowerFall Ascension\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Hello Neighbor Mod Kit\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Wattam\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Telltale Batman Shadows Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Foregone\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Escapists\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Detroit: Become Human\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"SuperMash\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Mechwarrior 5\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Hades\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Mechwarrior 5 Modding Toolkit\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Jotun Valhalla Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Surviving the Aftermath\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Phoenix Point\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Crew 2\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Arise: A Simple Story\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Wolf Among Us\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Shenmue III\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Rayman Legends\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Messenger\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Bee Simulator\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Star Wars Jedi: Fallen Order\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Rune II\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Yaga\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Superliminal\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Nuclear Throne\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Red Dead Redemption 2\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"ReadySet Heroes\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Afterparty\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Outer Worlds\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Kine\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Manifold Garden\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Jackbox Party Pack 6\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Spellbreak\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"A Knights Quest\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"John Wick Hex\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Ghostbusters: The Video Game Remastered\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Tom Clancy's Ghost Recon Breakpoint\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"WHAT THE GOLF?\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Untitled Goose Game\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Sojourn\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Cardpocalypse\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Borderlands 3\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Cycle\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Walking Dead: The Telltale Definitive Series\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Falcon Age\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Atomicrops\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"WRC 8 FIA World Rally Championship\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Control\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Ancestors The Humankind Odyssey\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Auto Chess\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Tetris® Effect\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Rebel Galaxy Outlaw\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Beyond: Two Souls\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Horace\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Griftlands\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Sinking City\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Heavy Rain\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Omen of Sorrow\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Journey\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Trover Saves the Universe\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Anno 1800\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Outer Wilds\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Observation\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Diesel Brothers Truck Building Simulator Editor\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Shakedown Hawaii\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Close to the Sun\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Dangerous Driving\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Totally Accurate Battle Simulator\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Assassin's Creed III Remastered\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Outward\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Satisfactory\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Division 2\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Operencia: The Stolen Sun\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Ape Out\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Helium Rain Mod Kit\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Trials Rising\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Far Cry New Dawn\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Metro Exodus\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Flower\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Subnautica Below Zero\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"My Time at Portia\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Oxenfree\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Hello Neighbor\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Hello Neighbor Hide & Seek\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Ashen\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Shadow Tactics\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Mutant Year Zero: Road To Eden\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Darksiders III\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"RollerCoaster Tycoon Adventures\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Jackbox Party Pack 3\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Bad North\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Assassin's Creed Odyssey\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Donut County\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"7 Billion Humans\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Walking Dead: The Final Season\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Overcooked\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"GNOG\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Vampyr\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Moonlighter\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"City of Brass\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Tom Clancy's Ghost Recon Wildlands\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Minit\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Far Cry 5\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Q.U.B.E.2\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Surviving Mars\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Into The Breach\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"InnerSpace\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Kingdom Come: Deliverance\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Celeste\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Subnautica\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Gorogoa\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Assassin's Creed Origins\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Jackbox Party Pack 4\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"South Park: The Fractured But Whole\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Jackbox Party Pack 5\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"RUINER\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Last Day of June\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \">observer_\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Sundered Eldritch Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Slime Rancher\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"What Remains of Edith Finch\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The End is Nigh\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Conarium\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Everything\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"RiME\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Yooka-Laylee and the Impossible Lair\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Thimbleweed Park\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Stories Untold\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"For Honor\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Walking Dead: A New Frontier\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Steep\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Darksiders Warmastered Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Watch Dogs 2\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"VR Funhouse Editor\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"ABZU\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Drawful 2\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Inside\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Sherlock Holmes The Devil's Daughter\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Enter The Gungeon\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Hyper Light Drifter\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Trackmania Turbo\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Far Cry Primal\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Walking Dead: Michonne\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"SUPERHOT\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Alan Wake\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Layers of Fear\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Witness\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Rainbow Six Siege\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Darksiders II Deathinitive Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Kingdom New Lands\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Rebel Galaxy\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Human Resource Machine\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Jackbox Party Pack 2\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"SOMA\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Valiant Hearts: The Great War\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"ARK Editor\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Batman™: Arkham Knight\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Metro: Last Light Redux\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Axiom Verge\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Talos Principle\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Far Cry 4\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Jackbox Party Pack\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"This War of Mine\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Assassin's Creed Unity\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"LEGO® Batman™ 3: Beyond Gotham\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Faster Than Light\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Transistor\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Child of Light: Ultimate Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"South Park: The Stick of Truth\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Fez\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Walking Dead: Season Two\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Bridge\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Far Cry 3\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Little Inferno\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Batman™: Arkham City - Game of the Year Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"LEGO® Batman™ 2: DC Super Heroes\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Ticket to Ride\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Alan Wake's American Nightmare\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Super Meat Boy\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"The Walking Dead: Season One\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Costume Quest\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Limbo\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Batman™ Arkham Asylum Game of the Year Edition\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Metro: 2033 Redux\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Torchlight\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"Shadow Complex Remastered\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"World of Goo\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Unable to add game \"LEGO® Batman™ The Videogame\": ReferenceError: socket is not defined","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}

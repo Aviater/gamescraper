@@ -27,7 +27,7 @@ const gameSchema = new Schema({
 		required: true,
 	},
 	historicalPrices: {
-		type: Object,
+		type: Array,
 	}
 }, {
 	timestamps: true
