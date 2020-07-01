@@ -31,7 +31,6 @@ exports.selectMoreButton = async () => {
 
 // Select all games
 exports.selectAllDiscountGames = async () => {
-    const scanTimerStart = process.hrtime();
     try {
         await page.waitForNavigation();
 
@@ -63,14 +62,7 @@ exports.selectAllDiscountGames = async () => {
                             
                         } catch(err) {
                             findDiscountPrice = standardPrice;
-                        } finally {
-                            console.log('Title:', title);
-                            console.log('Image', image);
-                            console.log('Url:', url);
-                            console.log('Standard Price:', standardPrice);
-                            console.log('Discount:', discount);
-                            console.log('Discount Price:', findDiscountPrice);
-                            
+                        } finally {                        
                             scannedGames.push({
                                 image: image,
                                 title: title,
@@ -88,7 +80,6 @@ exports.selectAllDiscountGames = async () => {
                     }
                     
                 }
-                console.log('GAMES:', scannedGames);
             return {
                 discountGames,
                 scannedGames,
@@ -100,7 +91,6 @@ exports.selectAllDiscountGames = async () => {
         return {
             discounts: gamesList.discountGames,
             scanResults: gamesList.scannedGames,
-            scanDuration: process.hrtime(scanTimerStart),
             scanErrors: gamesList.scanErrors
         }
     } catch(err) {

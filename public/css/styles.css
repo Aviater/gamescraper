@@ -11,6 +11,10 @@ table, p, li, h1, h2, h3, h4, h5, h6, span, label, hr, caption {
     color: white;
 }
 
+table, th {
+    padding: 0 10px;
+}
+
 caption {
     caption-side: unset;
 }
@@ -31,6 +35,17 @@ caption {
 
 .wrapper ul li span {
     float: right;
+}
+
+.scan-loader {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.scan-loader span:nth-of-type(1) {
+    position: relative;
+    top: -6px;
+    left: 5px;
 }
 
 #select-platform {

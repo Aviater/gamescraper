@@ -5,4 +5,4 @@ exports.stripSymbol = (string) => {
         return Number(strippedString);
     }
     return Number(string);
-} 
+}

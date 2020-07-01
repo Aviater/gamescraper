@@ -1,13 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-// const mailer = require('./utils/mailer');
 const cronJob = require('./utils/scheduler');
 const { Logger } = require('./utils/logger');
 const handler = require('./utils/loggerHandler');
 const socketIO = require('socket.io')
 const mongoose = require('mongoose');
-const Game = require('./models/games.model');
 
 require('dotenv').config();
 const app = express();
@@ -27,7 +25,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedT
     Logger.info('MongoDB connection successful...');
 });
 
-// Custom route logging handler (Must change)
+// Custom route logging handler
 app.use(handler);
 
 // Set path
@@ -48,7 +46,7 @@ const server = app.listen(port, (err) => {
 
 const client = socketIO(server);
 // Handle socket communication
-const socketHandler = require('./controller/socket.layer');
+const socketHandler = require('./controller/database.layer');
 client.on('connection', (socket) => {
     socketHandler.fetchGamesList()
         .then(res => {
@@ -58,7 +56,6 @@ client.on('connection', (socket) => {
     socket.on('scan', () => {
         socketHandler.performScan()
             .then(res => {
-                console.log('Scan results:', res);
                 socket.emit('scan-results', res);
             })
             .then(() => {
@@ -74,6 +71,11 @@ client.on('connection', (socket) => {
     });
 
     socket.on('disconnect', () => {
+        Logger.error('Socket closed.');
+        socket.disconnect();
+    });
+
+    socket.on('error', () => {
         Logger.error('Socket closed.');
         socket.disconnect();
     });
