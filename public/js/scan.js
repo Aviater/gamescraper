@@ -69,7 +69,7 @@ sortList = (res) => {
 }
 
 // Connect to socket.io
-let socket = io.connect('http://localhost:5000/');
+let socket = io.connect(window.location.href);
 
 if (socket !== 'undefined') {
     console.log('Connected to socket...');
