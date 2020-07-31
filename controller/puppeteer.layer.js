@@ -6,7 +6,7 @@ let page;
 
 // Launch puppeteer
 exports.launchPuppeteer = async () => {
-    browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
+    browser = await puppeteer.launch({headless: false}, {args: ['--no-sandbox', '--disable-setuid-sandbox']});
     page = await browser.newPage();
 }
 
@@ -23,7 +23,7 @@ exports.navigateToUrl = async (url) => {
 exports.selectMoreButton = async () => {
     try {
         await page.click('#browse-pagination', {waitUntil: 'networkidle2'})
-        Logger.silly('clicked!');
+        Logger.silly('Clicked button!');
     } catch(err) {
         Logger.error(`Unable to click the 'Load More' button: `, err);
     }
@@ -35,43 +35,72 @@ exports.selectAllDiscountGames = async () => {
         await page.waitForNavigation();
 
         let gamesList = await page.evaluate(() => {
-                let allGames = document.getElementsByClassName('BrowseGrid-card_9f6a50fb');
-                
-                console.log('All games:', allGames);
+                let allGames = document.getElementsByClassName('css-1adx3p4-BrowseGrid-styles__card');
                 let scannedGames = [];
                 let discountGames = 0;
                 let scanErrors = 0;
                 for(let i = 0; i < allGames.length; i++) {
                     try {
                         const image = allGames[i].getElementsByTagName('img')[0].src;
-                        const title = allGames[i].getElementsByClassName('OfferTitleInfo-title_abc02a91')[0].textContent;
+                        const title = allGames[i].getElementsByClassName('css-tybchz-OfferTitleInfo__title')[0].textContent;
                         const url = allGames[i].getElementsByTagName('a')[0].href;
-                        let standardPrice = allGames[i].getElementsByClassName('Price-original_a6834d25')[0].textContent;
+                        // let standardPrice = allGames[i].getElementsByClassName('css-1cxwn9g')[0].textContent;
+                        let standardPrice = 0;
                         let discount = 0;
                         let findDiscountPrice = 0;
-                        try {
+                        let discountPrice = 0;
+                        // try {
                             
-                            // Check if discounted
-                            if(typeof allGames[i].getElementsByClassName('PurchaseTag-tag_452447bf')[0] !== 'undefined') {
-                                discount = allGames[i].getElementsByClassName('PurchaseTag-tag_452447bf')[0].textContent;
-                            }
+                        //     // Check if discounted
+                        //     if(typeof allGames[i].getElementsByClassName('css-hxebnf-PurchaseTag__tag')[0] !== 'undefined') {
+                        //         discount = allGames[i].getElementsByClassName('css-hxebnf-PurchaseTag__tag')[0].textContent;
+                        //     }
                             
-                            standardPrice = allGames[i].getElementsByClassName('Price-discount_01260a89')[0].textContent;
-                            findDiscountPrice = allGames[i].getElementsByClassName('Price-original_a6834d25')[0].textContent;
+                        //     standardPrice = allGames[i].getElementsByClassName('css-1e017zm-Price__discount')[0].textContent;
+                            
+                        //     findDiscountPrice = allGames[i].getElementsByClassName('Price-discount_01260a89')[0].textContent;
+                        //     discountGames++;
+                        //     console.log(discountGames);
+                            
+                        // } catch(err) {
+                        //     findDiscountPrice = standardPrice;
+                        // } finally {                        
+                        //     scannedGames.push({
+                        //         image: image,
+                        //         title: title,
+                        //         url: url,
+                        //         standardPrice: standardPrice === 'Free' ? 0 : standardPrice,
+                        //         discount: discount,
+                        //         discountPrice: findDiscountPrice === 'Free' ? 0 : findDiscountPrice
+                        //     });
+                        // }
+                        let price1 = allGames[i].getElementsByClassName('css-1cxwn9g')[0];
+                        let price2 = allGames[i].getElementsByClassName('css-1e017zm-Price__discount')[0];
+                        let price3 = allGames[i].getElementsByClassName('css-hxebnf-PurchaseTag__tag')[0];
+
+                        if(price2 !== undefined && price3 !== undefined) {
+                            standardPrice = price2.textContent;
+                            discount = price3.textContent;
+                            discountPrice = price1.textContent;
                             discountGames++;
-                            
-                        } catch(err) {
-                            findDiscountPrice = standardPrice;
-                        } finally {                        
-                            scannedGames.push({
-                                image: image,
-                                title: title,
-                                url: url,
-                                standardPrice: standardPrice === 'Free' ? 0 : standardPrice,
-                                discount: discount,
-                                discountPrice: findDiscountPrice === 'Free' ? 0 : findDiscountPrice
-                            });
+                        } else if(price2 !== undefined && price3 === undefined) {
+                            standardPrice = price2.textContent;
+                            discountPrice = price1.textContent;
+                            discountGames++; 
+                        } else {
+                            standardPrice = price1.textContent;
+                            discountPrice = standardPrice;
                         }
+
+                        scannedGames.push({
+                            image: image,
+                            title: title,
+                            url: url,
+                            standardPrice: standardPrice === 'Free' ? 0 : standardPrice,
+                            discount: discount,
+                            discountPrice: discountPrice === 'Free' ? 0 : discountPrice
+                        });
+                        console.log(scannedGames);
 
                     } catch(err) {
                         console.log('A game couldn\'t be scanned:', err);

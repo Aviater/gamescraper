@@ -1901,3 +1901,111 @@
 {"message":"Socket closed.","level":"error"}
 {"message":"Socket closed.","level":"error"}
 {"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Automatic scan error: TypeError: Cannot read property 'discounts' of undefined","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"level":"error","message":"Unable to navigate to https://www.epicgames.com/store/en-US/browse:Navigation failed because browser has disconnected!","stack":"Error: Navigation failed because browser has disconnected!\n    at CDPSession.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:45:131)\n    at CDPSession.emit (events.js:311:20)\n    at CDPSession._onClosed (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:181:14)\n    at Connection._onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:76:25)\n    at WebSocket.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\WebSocketTransport.js:25:32)\n    at WebSocket.onMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\event-target.js:125:16)\n    at WebSocket.emit (events.js:311:20)\n    at Receiver.receiverOnMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\websocket.js:800:20)\n    at Receiver.emit (events.js:311:20)\n    at Receiver.dataMessage (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:436:14)\n    at Receiver.getData (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:366:17)\n    at Receiver.startLoop (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:142:22)\n    at Receiver._write (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\ws\\lib\\receiver.js:77:10)\n    at doWrite (_stream_writable.js:441:12)\n    at writeOrBuffer (_stream_writable.js:425:5)\n    at Receiver.Writable.write (_stream_writable.js:316:11)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.goto (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:476:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.navigateToUrl (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:16:20)\n    at exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\database.layer.js:33:21)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"error","message":"Unable to click the 'Load More' button: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.","stack":"Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.\n    at CDPSession.send (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Connection.js:141:35)\n    at ExecutionContext._evaluateInternal (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:47:18)\n    at ExecutionContext.evaluateHandle (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\ExecutionContext.js:36:21)\n    at ExecutionContext.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\DOMWorld.js:104:44\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.click (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:757:33)\n    at Object.exports.selectMoreButton (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:25:20)\n    at exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\database.layer.js:34:21)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"name":"TimeoutError","level":"error","message":"Unable to scan games:Navigation timeout of 30000 ms exceeded","stack":"TimeoutError: Navigation timeout of 30000 ms exceeded\n    at C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:100:111\n    at async FrameManager.waitForFrameNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\FrameManager.js:107:23)\n    at async Frame.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\FrameManager.js:298:16)\n    at async Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:16)\n    at async Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:35:9)\n    at async exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\database.layer.js:36:50)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:94:19)\n    at Page.waitForNavigation (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\Page.js:483:53)\n    at Page.<anonymous> (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\node_modules\\puppeteer\\lib\\helper.js:95:27)\n    at Object.exports.selectAllDiscountGames (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\puppeteer.layer.js:35:20)\n    at exports.performScan (C:\\Users\\bened\\Desktop\\Benedict Marien - Node Project\\controller\\database.layer.js:36:66)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"message":"Automatic scan error: TypeError: Cannot destructure property 'discounts' of '(intermediate value)' as it is undefined.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Unable to add game \"20XX\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Barony\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Superbrothers: Sword & Sworcery EP\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Sludge Life\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"20XX\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Barony\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Superbrothers: Sword & Sworcery EP\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"20XX\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Barony\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Superbrothers: Sword & Sworcery EP\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Sludge Life\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Sludge Life\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Unable to add game \"Barony\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"20XX\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Superbrothers: Sword & Sworcery EP\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Sludge Life\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Unable to add game \"20XX\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Barony\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Superbrothers: Sword & Sworcery EP\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Trackmania\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Sludge Life\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Delores: A Thimbleweed Park mini-adventure\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Might & Magic: Chess Royale\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"SMITE\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Paladins\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Dauntless\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Mars 2030 Editor\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Magic The Gathering Arena\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Hello Neighbor Mod Kit\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Mechwarrior 5 Modding Toolkit\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"The Cycle\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Auto Chess\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Diesel Brothers Truck Building Simulator Editor\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Helium Rain Mod Kit\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"Atlas Mod Kit\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"VR Funhouse Editor\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Unable to add game \"ARK Editor\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\"","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Unable to add game \"20XX\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Barony\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Superbrothers: Sword & Sworcery EP\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Trackmania\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Sludge Life\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Delores: A Thimbleweed Park mini-adventure\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Might & Magic: Chess Royale\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"SMITE\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Paladins\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Dauntless\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Mars 2030 Editor\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Magic The Gathering Arena\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Hello Neighbor Mod Kit\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Mechwarrior 5 Modding Toolkit\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"The Cycle\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Auto Chess\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Diesel Brothers Truck Building Simulator Editor\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Helium Rain Mod Kit\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Atlas Mod Kit\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"VR Funhouse Editor\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"ARK Editor\": ValidationError: standardPrice: Cast to Number failed for value \"NaN\" at path \"standardPrice\", discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Unable to add game \"Barony\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"20XX\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Superbrothers: Sword & Sworcery EP\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}
+{"message":"Unable to add game \"Sludge Life\": ValidationError: discountPrice: Cast to Number failed for value \"NaN\" at path \"discountPrice\"","level":"error"}

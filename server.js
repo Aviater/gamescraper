@@ -81,7 +81,7 @@ client.on('connection', (socket) => {
     });
 
     // Cron job
-    const autoScan = 9; // hour 
+    const autoScan = 33; // hour 
     cronJob.scheduleScan(autoScan, socketHandler.performScan, socket);
     
 });

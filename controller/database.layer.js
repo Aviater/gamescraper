@@ -34,6 +34,7 @@ exports.performScan = async () => {
     await puppeteer.selectMoreButton();
     
     const {discounts, scanResults, scanErrors} = await puppeteer.selectAllDiscountGames();
+    // let historicalEntry = [];
     
     let scan;
     for(let i = 0; i < scanResults.length; i++) {
