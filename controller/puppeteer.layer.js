@@ -6,7 +6,7 @@ let page;
 
 // Launch puppeteer
 exports.launchPuppeteer = async () => {
-    browser = await puppeteer.launch({headless: false}, {args: ['--no-sandbox', '--disable-setuid-sandbox']});
+    browser = await puppeteer.launch({headless: true}, {args: ['--no-sandbox', '--disable-setuid-sandbox']});
     page = await browser.newPage();
 }
 
@@ -41,39 +41,13 @@ exports.selectAllDiscountGames = async () => {
                 let scanErrors = 0;
                 for(let i = 0; i < allGames.length; i++) {
                     try {
-                        const image = allGames[i].getElementsByTagName('img')[0].src;
+                        const image = allGames[i].getElementsByTagName('img')[allGames[i].getElementsByTagName('img').length -1].src;
                         const title = allGames[i].getElementsByClassName('css-tybchz-OfferTitleInfo__title')[0].textContent;
                         const url = allGames[i].getElementsByTagName('a')[0].href;
-                        // let standardPrice = allGames[i].getElementsByClassName('css-1cxwn9g')[0].textContent;
                         let standardPrice = 0;
                         let discount = 0;
-                        let findDiscountPrice = 0;
                         let discountPrice = 0;
-                        // try {
-                            
-                        //     // Check if discounted
-                        //     if(typeof allGames[i].getElementsByClassName('css-hxebnf-PurchaseTag__tag')[0] !== 'undefined') {
-                        //         discount = allGames[i].getElementsByClassName('css-hxebnf-PurchaseTag__tag')[0].textContent;
-                        //     }
-                            
-                        //     standardPrice = allGames[i].getElementsByClassName('css-1e017zm-Price__discount')[0].textContent;
-                            
-                        //     findDiscountPrice = allGames[i].getElementsByClassName('Price-discount_01260a89')[0].textContent;
-                        //     discountGames++;
-                        //     console.log(discountGames);
-                            
-                        // } catch(err) {
-                        //     findDiscountPrice = standardPrice;
-                        // } finally {                        
-                        //     scannedGames.push({
-                        //         image: image,
-                        //         title: title,
-                        //         url: url,
-                        //         standardPrice: standardPrice === 'Free' ? 0 : standardPrice,
-                        //         discount: discount,
-                        //         discountPrice: findDiscountPrice === 'Free' ? 0 : findDiscountPrice
-                        //     });
-                        // }
+
                         let price1 = allGames[i].getElementsByClassName('css-1cxwn9g')[0];
                         let price2 = allGames[i].getElementsByClassName('css-1e017zm-Price__discount')[0];
                         let price3 = allGames[i].getElementsByClassName('css-hxebnf-PurchaseTag__tag')[0];
@@ -100,7 +74,6 @@ exports.selectAllDiscountGames = async () => {
                             discount: discount,
                             discountPrice: discountPrice === 'Free' ? 0 : discountPrice
                         });
-                        console.log(scannedGames);
 
                     } catch(err) {
                         console.log('A game couldn\'t be scanned:', err);

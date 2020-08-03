@@ -1,15 +1,15 @@
 const nodemailer = require('nodemailer');
 
-sendMail = (res) => {
+exports.sendMail = (res) => {
     // Email Styling
     const htmlEmail = `
-    <h3>Daily Scan Results</h3>
-    <p>Discounts found: ${res.discounts}</p>
-    <p>Games scanned: ${res.gamesScanned}</p>
-    <p>Scan duration: ${res.duration[0]}s ${res.duration[1] / 1000000}ms</p>
-    <br/>
-    <h4>Scan Issues</h2>
-    <p>Games not scanned: ${res.scanErrors}</p>
+        <h3>Daily Scan Results</h3>
+        <p>Discounts found: ${res.discounts}</p>
+        <p>Games scanned: ${res.gamesScanned}</p>
+        <p>Scan duration: ${res.duration[0]}s ${res.duration[1] / 1000000}ms</p>
+        <br/>
+        <h4>Scan Issues</h2>
+        <p>Games not scanned: ${res.scanErrors}</p>
     `
 
     // Mail Authentication
@@ -45,5 +45,3 @@ sendMail = (res) => {
         }
     });
 }
-
-exports.sendMail = sendMail;

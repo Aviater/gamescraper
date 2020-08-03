@@ -76,3 +76,30 @@ caption {
 .bm-games-col .wrapper {
     border: none;
 }
+
+.found-games tr {
+    line-height: 2;
+    cursor: pointer;
+}
+
+.found-games tr:hover {
+    background-color: darkslategray;
+}
+
+.game-image {
+    width: 100%;
+}
+
+.game-prices {
+    padding: 0;
+    text-align: center;
+}
+
+.game-prices li {
+    display: inline;
+    font-size: 24px;
+}
+
+.game-url {
+    width: 100%;
+}

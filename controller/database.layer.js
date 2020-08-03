@@ -27,15 +27,14 @@ exports.fetchGamesList = async () => {
     return games;
 }
 
-exports.performScan = async () => {
+exports.performScan = async (scheduled) => {
     const scanTimerStart = process.hrtime();
     await puppeteer.launchPuppeteer();
     await puppeteer.navigateToUrl('https://www.epicgames.com/store/en-US/browse')
     await puppeteer.selectMoreButton();
     
     const {discounts, scanResults, scanErrors} = await puppeteer.selectAllDiscountGames();
-    // let historicalEntry = [];
-    
+
     let scan;
     for(let i = 0; i < scanResults.length; i++) {
         const game = {
@@ -45,15 +44,40 @@ exports.performScan = async () => {
             standardPrice: generalUtils.stripSymbol(scanResults[i].standardPrice),
             discount: scanResults[i].discount,
             discountPrice: generalUtils.stripSymbol(scanResults[i].discountPrice),
-            historicalPrices: [
-                {
+            historicalPrices: [{
                     date: moment(new Date()).format('DD/MM/YYYY'),
                     discountPrice: generalUtils.stripSymbol(scanResults[i].discountPrice)
-                }
-            ]
+                }]
         }
 
-        scan = await Game.findOneAndUpdate({'title': scanResults[i].title}, game, {useFindAndModify: false})
+        if(scheduled) {
+            update = {
+                $set: {image: scanResults[i].image},
+                $set: {title: scanResults[i].title},
+                $set: {url: scanResults[i].url},
+                $set: {standardPrice: generalUtils.stripSymbol(scanResults[i].standardPrice)},
+                $set: {discount: scanResults[i].discount},
+                $set: {discountPrice: generalUtils.stripSymbol(scanResults[i].discountPrice)},
+                $push: {historicalPrices: 
+                    {
+                        date: moment(new Date()).format('DD/MM/YYYY'),
+                        discountPrice: generalUtils.stripSymbol(scanResults[i].discountPrice)
+                    }
+                }
+            }
+        } else {
+            update = {
+                $set: {image: scanResults[i].image},
+                $set: {title: scanResults[i].title},
+                $set: {url: scanResults[i].url},
+                $set: {standardPrice: generalUtils.stripSymbol(scanResults[i].standardPrice)},
+                $set: {discount: scanResults[i].discount},
+                $set: {discountPrice: generalUtils.stripSymbol(scanResults[i].discountPrice)}
+            }
+        }
+        
+
+        scan = await Game.findOneAndUpdate({'title': scanResults[i].title}, update, {useFindAndModify: false})
             .then(res => {
                 Logger.info(`Game updated: ${res.title}`);
             })
@@ -78,5 +102,7 @@ exports.performScan = async () => {
                     .catch((err) => Logger.error(`Unable to add game "${newGame.title}": ${err}`));
             })
         }
+        
+        // Returns scan results
         return scan;
 }

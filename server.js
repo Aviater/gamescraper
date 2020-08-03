@@ -35,6 +35,7 @@ app.use(express.static(__dirname + '/public'));
 const routes = require('./routes/routes');
 app.use(routes);
 
+// Start server
 const port = process.env.PORT || 5000;
 const server = app.listen(port, (err) => {
     if(err) {
@@ -44,8 +45,8 @@ const server = app.listen(port, (err) => {
     Logger.info(`Server started in port ${port}...`);
 });
 
-const client = socketIO(server);
 // Handle socket communication
+const client = socketIO(server);
 const socketHandler = require('./controller/database.layer');
 client.on('connection', (socket) => {
     socketHandler.fetchGamesList()
@@ -54,7 +55,7 @@ client.on('connection', (socket) => {
         });
     
     socket.on('scan', () => {
-        socketHandler.performScan()
+        socketHandler.performScan(false)
             .then(res => {
                 socket.emit('scan-results', res);
             })
@@ -81,7 +82,7 @@ client.on('connection', (socket) => {
     });
 
     // Cron job
-    const autoScan = 33; // hour 
+    const autoScan = 04; // hour 
     cronJob.scheduleScan(autoScan, socketHandler.performScan, socket);
     
 });

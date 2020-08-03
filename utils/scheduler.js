@@ -8,7 +8,7 @@ exports.scheduleScan = (minute, doScan, socket) => {
 
     schedule.scheduleJob(rule, () => {
         Logger.info(`Started cron job`);
-        doScan()
+        doScan(true)
             .then(res => {
                 console.log('Scan results:', res);
                 mailer.sendMail(res);
