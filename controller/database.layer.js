@@ -31,10 +31,10 @@ exports.fetchGamesList = async () => {
 exports.performScan = async (scheduled) => {
     const scanTimerStart = process.hrtime();
     await puppeteer.launchPuppeteer();
-    await puppeteer.navigateToUrl(process.env.EPIC_GAMES_URL);
-    await puppeteer.selectMoreButton(process.env.EPIC_GAMES_MORE_BUTTON);
+    await puppeteer.navigateToUrl(config.EpicGamesUrl);
+    await puppeteer.selectMoreButton(config.EpicGamesMoreButton);
     
-    const {discounts, scanResults, scanErrors} = await puppeteer.selectAllDiscountGames();
+    const {discounts, scanResults, scanErrors} = await puppeteer.selectAllDiscountGames(config);
 
     let scan;
     for(let i = 0; i < scanResults.length; i++) {
@@ -89,7 +89,7 @@ exports.performScan = async (scheduled) => {
                 const newGame = new Game(game);
                 newGame.save()
                     .then(() => {
-                        Logger.info(`New game added: ${newGame.title}`)
+                        Logger.info(`New game added: ${newGame.title}`);
                     })
                     .then(() => {
                         if(i == (scanResults.length - 1)) {

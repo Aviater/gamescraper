@@ -42,7 +42,7 @@ exports.handleSocket = (server) => {
         });
 
         // Cron job
-        const autoScan = Number(process.env.SCHEDULED_SCAN_TIME); // minute
+        const autoScan = config.scheduledScanTime; // minute
         cronJob.scheduleScan(autoScan, dbLayer.performScan, socket);
         
     });
