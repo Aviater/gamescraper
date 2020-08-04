@@ -1,11 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const cronJob = require('./utils/scheduler');
 const { Logger } = require('./utils/logger');
 const handler = require('./utils/loggerHandler');
-const socketIO = require('socket.io')
 const mongoose = require('mongoose');
+const socketHandler = require('./controller/socket.layer');
 
 require('dotenv').config();
 const app = express();
@@ -45,44 +44,4 @@ const server = app.listen(port, (err) => {
     Logger.info(`Server started in port ${port}...`);
 });
 
-// Handle socket communication
-const client = socketIO(server);
-const socketHandler = require('./controller/database.layer');
-client.on('connection', (socket) => {
-    socketHandler.fetchGamesList()
-        .then(res => {
-            socket.emit('game-data', res);
-        });
-    
-    socket.on('scan', () => {
-        socketHandler.performScan(false)
-            .then(res => {
-                socket.emit('scan-results', res);
-            })
-            .then(() => {
-                socketHandler.fetchGamesList();
-            });
-    });
-
-    socket.on('fetch-list', () => {
-        socketHandler.fetchGamesList()
-            .then(res => {
-                socket.emit('game-data', res);
-            });
-    });
-
-    socket.on('disconnect', () => {
-        Logger.error('Socket closed.');
-        socket.disconnect();
-    });
-
-    socket.on('error', () => {
-        Logger.error('Socket closed.');
-        socket.disconnect();
-    });
-
-    // Cron job
-    const autoScan = 04; // hour 
-    cronJob.scheduleScan(autoScan, socketHandler.performScan, socket);
-    
-});
+socketHandler.handleSocket(server);

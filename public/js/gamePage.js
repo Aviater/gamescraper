@@ -1,5 +1,5 @@
 // Fetch api data (game information)
-fetch(`api/game${window.location.pathname}`)
+fetch(`/api${window.location.pathname}`)
     .then(res => {
         res.json()
             .then((payload) => {
@@ -13,7 +13,6 @@ fetch(`api/game${window.location.pathname}`)
 
 renderData = (data) => {
     document.querySelector('.game-title').innerHTML = data.title;
-    document.querySelector('.game-image').src = data.image;
     document.querySelector('.game-url').href = data.url;
     document.querySelector('.standard-price').innerHTML = data.standardPrice + '€';
     document.querySelector('.discount').innerHTML = data.discount;
@@ -31,7 +30,7 @@ renderData = (data) => {
             type: 'line'
         },
         series: [{
-            name: 'sales',
+            name: 'Price',
             data: yAxis
         }],
         xaxis: {

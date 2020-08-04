@@ -1,0 +1,11 @@
+{
+    "EpicGamesUrl": "https://www.epicgames.com/store/en-US/browse",
+    "EpicGamesMoreButton": "#browse-pagination",
+    "allGames": "css-1adx3p4-BrowseGrid-styles__card",
+    "title": "css-tybchz-OfferTitleInfo__title",
+    "priceLeft": "css-1cxwn9g",
+    "priceCenter": "css-1e017zm-Price__discount",
+    "priceRight": "css-hxebnf-PurchaseTag__tag",
+    "scheduledScanTime": 55,
+    "scheduledEmailTo": "benedict.marien@gmail.com"
+}

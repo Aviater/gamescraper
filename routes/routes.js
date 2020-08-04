@@ -24,24 +24,15 @@ router.get('/api', (req, res) => {
 });
 
 // let gameId;
-router.get('/:id', (req, res) => {
-    // gameId = req.params.id;
+router.get('/game/:id', (req, res) => {
     const gamePage = fs.readFileSync('./public/html/gamePage.html');
-    const gameInfo = Game.findById(req.params.id)
-        .then(res => {
-            console.log('Found game:', res);
-            return res;
-        })
-        .catch(err => {
-            Logger.error(`Couldn't find ${req.params.id}: ${err}`)
-        });
     return res.send(header + gamePage + footer);
 });
 
 router.get(`/api/game/:id`, async (req, res) => {
     const gameInfo = Game.findById(req.params.id)
         .then(res => {
-            console.log('Found game:', res);
+            Logger.verbose('Requested game:', res._doc);
             return res;
         })
         .catch(err => {

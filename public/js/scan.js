@@ -130,7 +130,7 @@ if (socket !== 'undefined') {
 
 // Redirect to game page
 handleRedirect = (id) => {
-    window.open(`/${id}`, '_blank');
+    window.open(`/game/${id}`, '_blank');
 }
 
 

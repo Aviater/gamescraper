@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const config = require('../config.json');
 
 exports.sendMail = (res) => {
     // Email Styling
@@ -32,7 +33,7 @@ exports.sendMail = (res) => {
 
     var mail = {
         from: process.env.EMAIL,
-        to: 'benedict.marien@gmail.com',
+        to: config.scheduledEmailTo,
         subject: 'Gamescount Daily Scan',
         html: htmlEmail
     }

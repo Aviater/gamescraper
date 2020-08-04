@@ -3,6 +3,7 @@ const puppeteer = require('./puppeteer.layer');
 const moment = require('moment');
 const { Logger } = require('../utils/logger');
 const generalUtils = require('../utils/general');
+const config = require('../config.json');
 
 sendScanResults = (discounts, scanResults, duration, scanErrors) => {
     // Send scan data
@@ -30,15 +31,14 @@ exports.fetchGamesList = async () => {
 exports.performScan = async (scheduled) => {
     const scanTimerStart = process.hrtime();
     await puppeteer.launchPuppeteer();
-    await puppeteer.navigateToUrl('https://www.epicgames.com/store/en-US/browse')
-    await puppeteer.selectMoreButton();
+    await puppeteer.navigateToUrl(process.env.EPIC_GAMES_URL);
+    await puppeteer.selectMoreButton(process.env.EPIC_GAMES_MORE_BUTTON);
     
     const {discounts, scanResults, scanErrors} = await puppeteer.selectAllDiscountGames();
 
     let scan;
     for(let i = 0; i < scanResults.length; i++) {
         const game = {
-            image: scanResults[i].image,
             title: scanResults[i].title,
             url: scanResults[i].url,
             standardPrice: generalUtils.stripSymbol(scanResults[i].standardPrice),
@@ -52,7 +52,6 @@ exports.performScan = async (scheduled) => {
 
         if(scheduled) {
             update = {
-                $set: {image: scanResults[i].image},
                 $set: {title: scanResults[i].title},
                 $set: {url: scanResults[i].url},
                 $set: {standardPrice: generalUtils.stripSymbol(scanResults[i].standardPrice)},
@@ -67,7 +66,6 @@ exports.performScan = async (scheduled) => {
             }
         } else {
             update = {
-                $set: {image: scanResults[i].image},
                 $set: {title: scanResults[i].title},
                 $set: {url: scanResults[i].url},
                 $set: {standardPrice: generalUtils.stripSymbol(scanResults[i].standardPrice)},
@@ -103,6 +101,8 @@ exports.performScan = async (scheduled) => {
             })
         }
         
+        await puppeteer.closeBrowser();
+
         // Returns scan results
         return scan;
 }

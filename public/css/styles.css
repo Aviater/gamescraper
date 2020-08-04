@@ -86,10 +86,7 @@ caption {
     background-color: darkslategray;
 }
 
-.game-image {
-    width: 100%;
-}
-
+/* Game page */
 .game-prices {
     padding: 0;
     text-align: center;
@@ -102,4 +99,8 @@ caption {
 
 .game-url {
     width: 100%;
+}
+
+.game-title {
+    text-align: center;
 }
