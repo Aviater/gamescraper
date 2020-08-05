@@ -31,8 +31,10 @@ app.use(handler);
 app.use(express.static(__dirname + '/public'));
 
 // Use routes
-const routes = require('./routes/routes');
-app.use(routes);
+const userRoutes = require('./routes/main');
+const apiRoutes = require('./routes/api');
+app.use(userRoutes);
+app.use(apiRoutes);
 
 // Start server
 const port = process.env.PORT || 5000;
@@ -44,4 +46,5 @@ const server = app.listen(port, (err) => {
     Logger.info(`Server started in port ${port}...`);
 });
 
+// Socket communication
 socketHandler.handleSocket(server);

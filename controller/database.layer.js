@@ -73,7 +73,6 @@ exports.performScan = async (scheduled) => {
                 $set: {discountPrice: generalUtils.stripSymbol(scanResults[i].discountPrice)}
             }
         }
-        
 
         scan = await Game.findOneAndUpdate({'title': scanResults[i].title}, update, {useFindAndModify: false})
             .then(res => {

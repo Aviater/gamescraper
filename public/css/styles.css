@@ -104,3 +104,7 @@ caption {
 .game-title {
     text-align: center;
 }
+
+.apexcharts-tooltip, .apexcharts-tooltip-text div span {
+    color: black;
+}
