@@ -100,7 +100,7 @@ exports.performScan = async (scheduled) => {
             })
         }
         
-        await puppeteer.closeBrowser();
+        // await puppeteer.closeBrowser();
 
         // Returns scan results
         return scan;

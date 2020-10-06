@@ -39,6 +39,7 @@ exports.selectAllDiscountGames = async (config) => {
                 let scannedGames = [];
                 let discountGames = 0;
                 let scanErrors = 0;
+
                 for(let i = 0; i < allGames.length; i++) {
                     try {
                         const title = allGames[i].getElementsByClassName(config.title)[0].textContent;
@@ -51,17 +52,18 @@ exports.selectAllDiscountGames = async (config) => {
                         let price2 = allGames[i].getElementsByClassName(config.priceCenter)[0];
                         let price3 = allGames[i].getElementsByClassName(config.priceRight)[0];
 
+
                         if(price2 !== undefined && price3 !== undefined) {
-                            standardPrice = price2.textContent;
-                            discount = price3.textContent;
-                            discountPrice = price1.textContent;
+                            standardPrice = price3.textContent;
+                            discount = price1.textContent;
+                            discountPrice = price2.textContent;
                             discountGames++;
                         } else if(price2 !== undefined && price3 === undefined) {
-                            standardPrice = price2.textContent;
-                            discountPrice = price1.textContent;
-                            discountGames++; 
+                            standardPrice = price3.textContent;
+                            discountPrice = price2.textContent;
+                            discountGames++;
                         } else {
-                            standardPrice = price1.textContent;
+                            standardPrice = price3.textContent;
                             discountPrice = standardPrice;
                         }
 

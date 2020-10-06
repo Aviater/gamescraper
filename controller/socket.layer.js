@@ -13,6 +13,11 @@ exports.handleSocket = (server) => {
             .then(res => {
                 socket.emit('game-data', res);
             });
+
+        
+        setInterval(() => {
+            socket.emit('test', new Date())
+        }, 5000)
         
         socket.on('scan', () => {
             dbLayer.performScan(false)

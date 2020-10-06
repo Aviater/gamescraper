@@ -20,13 +20,13 @@ handleDiscountText = (res) => {
     if(res.standardPrice === 0) {
         standardPrice = 'Free'
     } else {
-        standardPrice = `${res.standardPrice}€`;
+        standardPrice = `DKK ${res.standardPrice}`;
     }
 
     if(res.discountPrice === 0) {
         discountPrice = 'Free'
     } else {
-        discountPrice = `${res.discountPrice}€`;
+        discountPrice = `DKK ${res.discountPrice}`;
     }
 
     if(res.discountPrice == 0 && res.standardPrice !== 0) {
@@ -77,6 +77,10 @@ if (socket !== 'undefined') {
     } catch(err) {
         console.log('Unable to send socket request:', res);
     }
+
+    socket.on('test', (res) => {
+        console.log('Data:', res);
+    });
 
     // Render table rows
     try {

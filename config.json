@@ -3,9 +3,9 @@
     "EpicGamesMoreButton": "#browse-pagination",
     "allGames": "css-1adx3p4-BrowseGrid-styles__card",
     "title": "css-tybchz-OfferTitleInfo__title",
-    "priceLeft": "css-1cxwn9g",
+    "priceLeft": "css-la8unk-PurchaseTag__tag",
     "priceCenter": "css-1e017zm-Price__discount",
-    "priceRight": "css-hxebnf-PurchaseTag__tag",
-    "scheduledScanTime": 27,
+    "priceRight": "css-1cxwn9g",
+    "scheduledScanTime": 19,
     "scheduledEmailTo": "benedict.marien@gmail.com"
 }
