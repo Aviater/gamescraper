@@ -6664,3 +6664,7 @@
 {"message":"Socket closed.","level":"error"}
 {"message":"Socket closed.","level":"error"}
 {"message":"Socket closed.","level":"error"}
+{"message":"Automatic scan error: TypeError: Cannot read property 'discounts' of undefined","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}
+{"message":"Socket closed.","level":"error"}

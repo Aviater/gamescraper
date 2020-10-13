@@ -14,9 +14,9 @@ fetch(`/api${window.location.pathname}`)
 renderData = (data) => {
     document.querySelector('.game-title').innerHTML = data.title;
     document.querySelector('.game-url').href = data.url;
-    document.querySelector('.standard-price').innerHTML = data.standardPrice + 'DKK';
+    document.querySelector('.standard-price').innerHTML = data.standardPrice + '€';
     document.querySelector('.discount').innerHTML = data.discount;
-    document.querySelector('.discount-price').innerHTML = data.discountPrice + 'DKK';
+    document.querySelector('.discount-price').innerHTML = data.discountPrice + '€';
 
     let xAxis = [];
     let yAxis = [];

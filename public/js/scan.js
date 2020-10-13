@@ -20,13 +20,13 @@ handleDiscountText = (res) => {
     if(res.standardPrice === 0) {
         standardPrice = 'Free'
     } else {
-        standardPrice = `DKK ${res.standardPrice}`;
+        standardPrice = `${res.standardPrice}€`;
     }
 
     if(res.discountPrice === 0) {
         discountPrice = 'Free'
     } else {
-        discountPrice = `DKK ${res.discountPrice}`;
+        discountPrice = `${res.discountPrice}€`;
     }
 
     if(res.discountPrice == 0 && res.standardPrice !== 0) {
