@@ -6,7 +6,7 @@ let page;
 
 // Launch puppeteer
 exports.launchPuppeteer = async () => {
-    browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
+    browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox'], headless: false});
     page = await browser.newPage();
 }
 
@@ -52,20 +52,19 @@ exports.selectAllDiscountGames = async (config) => {
                         let price2 = allGames[i].getElementsByClassName(config.priceCenter)[0];
                         let price3 = allGames[i].getElementsByClassName(config.priceRight)[0];
 
-
-                        if(price2 !== undefined && price3 !== undefined) {
-                            standardPrice = price3.textContent;
+                        if(price2 !== undefined && price3 !== undefined && price1 !== undefined) {
+                            standardPrice = price2.textContent;
                             discount = price1.textContent;
-                            discountPrice = price2.textContent;
+                            discountPrice = price3.textContent;
                             discountGames++;
-                        } else if(price2 !== undefined && price3 === undefined) {
-                            standardPrice = price3.textContent;
-                            discountPrice = price2.textContent;
+                        } else if(price2 !== undefined && price1 === undefined) {
+                            standardPrice = price2.textContent;
+                            discountPrice = price3.textContent;
                             discountGames++;
                         } else {
                             standardPrice = price3.textContent;
                             discountPrice = standardPrice;
-                        }
+                        };
 
                         scannedGames.push({
                             title: title,
