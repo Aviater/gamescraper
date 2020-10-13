@@ -78,9 +78,6 @@ if (socket !== 'undefined') {
         console.log('Unable to send socket request:', res);
     }
 
-    socket.on('test', (res) => {
-        console.log('Data:', res);
-    });
 
     // Render table rows
     try {
